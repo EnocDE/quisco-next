@@ -20,7 +20,8 @@ export default function CategoryIcon({category} : CategoryIconProps) {
         <Image 
           src={`/icon_${category.slug}.svg`} 
           alt='Imagen categoria' 
-          fill
+          height={100}
+          width={100}
         />
       </div>
 

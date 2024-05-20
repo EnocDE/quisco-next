@@ -5,6 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function ToastNotification() {
   return (
-    <ToastContainer position="top-center" pauseOnHover={false} />
+    <ToastContainer position="top-center" pauseOnHover={false} draggable />
   )
 }
