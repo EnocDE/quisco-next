@@ -16,6 +16,7 @@ Dicho proyecto cuenta con varias interfaces, cada una para cumplir una función 
 - React
 - Zustand
 - Zod
+- PostgreSQL
 
 ## Comandos básicos
 Instalar dependencias del proyecto `npm install`
