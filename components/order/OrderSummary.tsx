@@ -6,6 +6,7 @@ import { useMemo } from "react"
 import { toast } from "react-toastify"
 import ProductDetails from "./ProductDetails"
 import { createOrder } from "@/actions/create-order-action"
+import { revalidatePath } from "next/cache"
 
 export default function OrderSummary() {
   const { order, clearOrder } = useStore()
@@ -36,10 +37,11 @@ export default function OrderSummary() {
     
     toast.success('Pedido realizado correctamente')
     clearOrder()
+    revalidatePath('/admin/orders')
   }
 
   return (
-    <aside className="lg:h-screen lg:overflow-y-auto md:w-64 lg:w-96 p-5">
+    <aside className="lg:h-screen lg:overflow-y-auto md:w-64 xl:w-96 p-5">
       <h1 className="text-4xl text-center font-black">Mi pedido</h1>
       {order.length === 0
         ? <p className="text-center my-10">El carrito esta vacio</p>

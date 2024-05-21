@@ -1,12 +1,23 @@
 "use client"
 
+import { getImagePath } from "@/src/utils"
 import { CldUploadWidget } from "next-cloudinary"
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { TbPhotoPlus } from "react-icons/tb"
+import { set } from "zod"
 
-export default function ImageUpload() {
+type ImageUploadProps = {
+  image?: string
+}
+
+export default function ImageUpload({ image }: ImageUploadProps) {
   const [imageUrl, setImageUrl] = useState('')
+  useEffect(() => {
+    if (image) {
+      setImageUrl(image)
+    }
+  }, [])
   return (
     <CldUploadWidget
       onSuccess={(result, { widget }) => {
@@ -32,14 +43,16 @@ export default function ImageUpload() {
               <TbPhotoPlus
                 size={50}
               />
-              <p className="text-lg font-semibold">Agregar imagen</p>
+              <p className="text-lg font-semibold">{imageUrl ? "" : "Agregar imagen"}</p>
               {imageUrl &&
                 <div className="absolute inset-0 w-full h-full">
                   <Image
                     fill
-                    style={{ objectFit: "contain" }}
-                    src={imageUrl}
+                    className="object-contain"
+                    src={getImagePath(imageUrl)}
                     alt="Imagen producto"
+                    priority
+                    sizes="(max-width: 768px) 100vw"
                   />
                 </div>
               }
