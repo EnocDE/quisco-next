@@ -11,14 +11,16 @@ export default function ProductCard({ product }: ProductCardProps) {
   const imagePath = getImagePath(product.image)
   return (
     <div className="border bg-white overflow-hidden h-full flex flex-col">
-      <Image
-        className="mx-auto"
-        src={imagePath}
-        alt={`Imagen platillo ${product.name}`}
-        width={400}
-        height={500}
-        quality={75}
-      />
+      <div className="w-full overflow-hidden aspect-[5/6]">
+        <Image
+          className="object-cover object-center w-full h-full"
+          src={imagePath}
+          alt={`Imagen platillo ${product.name}`}
+          width={400}
+          height={500}
+          quality={75}
+        />
+      </div>
 
       <div className="p-5 flex-1 flex flex-col">
         <h3 className="text-2xl font-bold flex-1">{product.name}</h3>
