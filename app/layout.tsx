@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-gray-100 text-[#333]`}>
+    <html lang="en" className="dark:bg-neutral-800">
+      <body className={`${inter.className} bg-gray-100 text-[#333]`} >
         {children}
         <ToastNotification />
       </body>
