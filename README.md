@@ -24,3 +24,14 @@ Instalar dependencias del proyecto `npm install`
 Inicializar el proyecto `npm run dev`
 
 ## Capturas de pantalla
+Interfaz del menú
+![Menú](https://res.cloudinary.com/djhttc5bd/image/upload/v1716265908/Captura_de_pantalla_2024-05-20_222907_ope75i.png)
+
+Interfaz de las ordenes
+![Ordenes](https://res.cloudinary.com/djhttc5bd/image/upload/v1716266417/Captura_de_pantalla_2024-05-20_224000_pkghdd.png)
+
+Interfaz de administrador para gestionar los productos
+![Administrador](https://res.cloudinary.com/djhttc5bd/image/upload/v1716265908/Captura_de_pantalla_2024-05-20_222930_cbmpud.png)
+
+Agregar nuevo producto
+![Agregar nuevo producto](https://res.cloudinary.com/djhttc5bd/image/upload/v1716265908/Captura_de_pantalla_2024-05-20_223106_inx3nn.png)
