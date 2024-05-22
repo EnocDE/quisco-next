@@ -11,7 +11,7 @@ export default async function OrderCard({ order }: OrderCardProps) {
   return (
     <section
       aria-labelledby="summary-heading"
-      className="mt-16 rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:mt-0 lg:p-8 space-y-4 flex flex-col"
+      className="rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:mt-0 lg:p-8 space-y-4 flex flex-col border border-neutral-200 min-h-[450px]"
     >
       <p className='text-2xl font-medium '>Cliente: {order.name}</p>
       <p className='text-lg font-medium '>Productos ordenados: </p>
