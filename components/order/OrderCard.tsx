@@ -11,7 +11,7 @@ export default async function OrderCard({ order }: OrderCardProps) {
   return (
     <section
       aria-labelledby="summary-heading"
-      className="rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:mt-0 lg:p-8 space-y-4 flex flex-col border border-neutral-200 min-h-[450px]"
+      className="rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:mt-0 lg:p-8 space-y-4 flex flex-col shadow min-h-[450px]"
     >
       <p className='text-2xl font-medium '>Cliente: {order.name}</p>
       <p className='text-lg font-medium '>Productos ordenados: </p>
@@ -34,7 +34,7 @@ export default async function OrderCard({ order }: OrderCardProps) {
         <input type="hidden" value={order.id} name="order_id" />
         <input
           type="submit"
-          className="bg-indigo-600 hover:bg-indigo-800 text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer"
+          className="bg-indigo-600 hover:bg-indigo-800 transition-colors text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer"
           value='Marcar Orden Completada'
         />
       </form>

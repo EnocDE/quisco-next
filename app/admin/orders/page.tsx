@@ -33,7 +33,7 @@ export default async function OrdersPage() {
       <form action={handleRefresh}>
         <input
           type="submit"
-          className="bg-green-500 text-white w-full lg:w-auto text-xl px-10 py-3 font-bold text-center inline-block cursor-pointer mb-5"
+          className="bg-green-500 hover:bg-green-600 transition-colors text-white w-full lg:w-auto text-xl px-10 py-3 font-bold text-center inline-block cursor-pointer mb-5"
           value={'Actualizar ordenes'}
         />
       </form>
