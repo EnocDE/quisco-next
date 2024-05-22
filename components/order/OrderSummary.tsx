@@ -1,12 +1,13 @@
 'use client'
+
+import { createOrder } from "@/actions/create-order-action"
 import { OrderSchema } from "@/src/schema"
 import { useStore } from "@/src/store"
 import { formatCurrency } from "@/src/utils"
+import { revalidatePath } from "next/cache"
 import { useMemo } from "react"
 import { toast } from "react-toastify"
 import ProductDetails from "./ProductDetails"
-import { createOrder } from "@/actions/create-order-action"
-import { revalidatePath } from "next/cache"
 
 export default function OrderSummary() {
   const { order, clearOrder } = useStore()
@@ -21,20 +22,20 @@ export default function OrderSummary() {
 
     const result = OrderSchema.safeParse(data)
     if (!result.success) {
-      result.error.issues.forEach(error => 
+      result.error.issues.forEach(error =>
         toast.error(error.message)
       )
       return
-    } 
+    }
 
     const response = await createOrder(data)
     if (response?.errors) {
-      response.errors.forEach(error => 
+      response.errors.forEach(error =>
         toast.error(error.message)
       )
       return
-    } 
-    
+    }
+
     toast.success('Pedido realizado correctamente')
     clearOrder()
     revalidatePath('/admin/orders')
