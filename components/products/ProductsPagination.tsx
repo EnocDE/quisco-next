@@ -26,7 +26,7 @@ export default function ProductsPagination({ page, totalPages }: ProductPaginati
         <Link
           key={currentPage}
           href={`/admin/products?page=${currentPage}`}
-          className={`bg-white px-4 py-2 text-sm text-gray-900 ring-1 ring-inset ring-gray-300 focus:z-20 focus:outline-offset-0 ${currentPage === page ? ' font-bold' : ''}`}
+          className={`bg-white px-4 py-2 text-sm ring-1 ring-inset ring-gray-300 focus:z-20 focus:outline-offset-0 ${currentPage === page ? ' font-bold text-indigo-600' : ''}`}
         >
           {currentPage}
         </Link>

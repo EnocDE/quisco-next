@@ -24,12 +24,12 @@ export default function ProductSearch() {
         type="text"
         placeholder="Buscar producto"
         name="search"
-        className="p-3 placeholder-gray-400 w-full"
+        className="p-3 placeholder-gray-400 w-full outline-none border-2 focus:border-indigo-700 transition-colors border-white"
       />
       <input
         type="submit"
         value="Buscar"
-        className="bg-indigo-600 hover:bg-indigo-700 transition-colors p-3 text-white font-bold cursor-pointer"
+        className="bg-indigo-600 hover:bg-indigo-700 transition-colors p-3 text-white font-bold cursor-pointer border-2 border-indigo-600"
       />
     </form>
   )
