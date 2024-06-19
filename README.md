@@ -9,7 +9,7 @@ Dicho proyecto cuenta con varias interfaces, cada una para cumplir una función 
 - El panel del administrador permitirá a cocina gestionar las ordenes y productos disponibles en el menú, todo esto en tiempo real.
 
 ### Vista en vivo
-- proximamente
+https://quisco-next-app.vercel.app/order/cafe
 
 ### Tecnologías usadas
 - Next.js
@@ -24,7 +24,8 @@ Dicho proyecto cuenta con varias interfaces, cada una para cumplir una función 
 ### Instalación
 1. Clonar el repositorio `git clone https://github.com/EnocDE/quisco-next.git`
 2. Instalar dependencias del proyecto `npm install`
-3. Inicializar el proyecto `npm run dev`
+3. Ejecutar el comando `npx prisma generate` y `npx prisma seed` 
+4. Inicializar el proyecto `npm run dev`
 
 ## Capturas de pantalla
 Interfaz del menú
