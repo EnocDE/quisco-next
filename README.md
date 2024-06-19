@@ -1,6 +1,6 @@
 # Quiosco con Next.js
 
-## Descripción
+### Descripción
 En este proyecto se construyó un quiosco de comida para un negocio. 
 Dicho proyecto cuenta con varias interfaces, cada una para cumplir una función y satisfacer una necesidad en especifico.
 
@@ -8,7 +8,10 @@ Dicho proyecto cuenta con varias interfaces, cada una para cumplir una función 
 
 - El panel del administrador permitirá a cocina gestionar las ordenes y productos disponibles en el menú, todo esto en tiempo real.
 
-## Tecnologías usadas
+### Vista en vivo
+- proximamente
+
+### Tecnologías usadas
 - Next.js
 - TypeScript
 - Tailwind
@@ -18,10 +21,10 @@ Dicho proyecto cuenta con varias interfaces, cada una para cumplir una función 
 - Zod
 - PostgreSQL
 
-## Comandos básicos
-Instalar dependencias del proyecto `npm install`
-
-Inicializar el proyecto `npm run dev`
+### Instalación
+1. Clonar el repositorio `git clone https://github.com/EnocDE/quisco-next.git`
+2. Instalar dependencias del proyecto `npm install`
+3. Inicializar el proyecto `npm run dev`
 
 ## Capturas de pantalla
 Interfaz del menú
