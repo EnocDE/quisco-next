@@ -3,6 +3,8 @@ import Heading from "@/components/ui/Heading";
 import { prisma } from "@/src/lib/prisma";
 import { revalidatePath } from "next/cache";
 
+export const dynamic = 'force-dynamic'
+
 async function getPendingOrders() {
   return await prisma.order.findMany({
     where: {
