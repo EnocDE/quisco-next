@@ -8,6 +8,9 @@ Dicho proyecto cuenta con varias interfaces, cada una para cumplir una función 
 
 - El panel del administrador permitirá a cocina gestionar las ordenes y productos disponibles en el menú, todo esto en tiempo real.
 
+### Vista en vivo
+[Link aqui](https://quisco-next-app.vercel.app/order/cafe)
+
 ### Tecnologías usadas
 - Next.js
 - TypeScript
